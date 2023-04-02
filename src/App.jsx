@@ -12,7 +12,7 @@ function App() {
   const [stateUpdateUser, setStateUpdateUser] = useState();
   const [isShowForm, setIsShowForm] = useState(false)
 
-  const {reset} = useForm()
+  // const {reset} = useForm()
 
   //Funcion que obtiene todos los usuarios
   const getAllUsersF = () => {
@@ -65,21 +65,21 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  const defaultValues = {
-    email: "",
-    birthday: "",
-    first_name: "",
-    last_name: "",
-    password: "",
-  };
+  // const defaultValues = {
+  //   email: "",
+  //   birthday: "",
+  //   first_name: "",
+  //   last_name: "",
+  //   password: "",
+  // };
 
-    const clearForm = () => {
-      if(setStateUpdateUser){
-        reset(setStateUpdateUser)
-        }
+  //   const clearForm = () => {
+  //     if(setStateUpdateUser){
+  //       reset(setStateUpdateUser)
+  //       }
       
         
-      }
+  //     }
       
       
     // Funcion que cambia el estado para mostrar el modal o no.
